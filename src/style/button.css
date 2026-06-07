@@ -1,0 +1,31 @@
+.buttons{
+    display:flex;
+    align-items:center;
+    gap:16px;
+}
+
+
+.primary{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height: 48px;
+    padding:0 32px;
+    border-radius:12px;
+    color:white;
+    text-decoration:none;
+    font-size:16px;
+    font-weight:600;
+    box-shadow:
+        0 10px 25px rgba(37,99,235,.25);
+
+    transition:.3s;
+}
+
+.btn-primary:hover{
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 20px 35px rgba(37,99,235,.35);
+}
+
