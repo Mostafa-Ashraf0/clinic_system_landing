@@ -22,9 +22,9 @@
     transition:.3s;
 }
 
-.btn-primary:hover{
+.primary:hover{
     transform:translateY(-3px);
-
+    color: black;
     box-shadow:
         0 20px 35px rgba(37,99,235,.35);
 }

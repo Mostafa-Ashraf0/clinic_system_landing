@@ -51,7 +51,7 @@ const KeyFeatures = ()=>{
 
     return(
        <Section>
-        <div>
+        <div className='features-container'>
             <div className='text-box'>
                 <h2>Everything you need to run <br/> your clinic, <span>effortlessly</span></h2>
                 <p>Powerful tools built to streamline your workflow, <br/> improve patient care, and grow your clinic.</p>
