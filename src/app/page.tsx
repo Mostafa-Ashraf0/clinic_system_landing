@@ -1,6 +1,8 @@
 import Header from "./components/header";
 import Hero from "./components/hero";
 import KeyFeatures from "./components/keyFeatures/KeyFeatures";
+import FeatureSection from "./components/FeatureSection/FeatureSection";
+import { features } from "../data/FeaturesSection";
 
 export default function Home() {
   return (
@@ -8,6 +10,17 @@ export default function Home() {
       <Header/>
       <Hero/>
       <KeyFeatures/>
+      {features.map((feat, index)=>(
+        <FeatureSection
+        key = {index}
+        title = {feat.title}
+        titleSpan = {feat.titleSpan}
+        para = {feat.description}
+        list = {feat.features}
+        active = {feat.active}
+        image = {feat.image}
+        />
+      ))}
     </div>
   );
 }
