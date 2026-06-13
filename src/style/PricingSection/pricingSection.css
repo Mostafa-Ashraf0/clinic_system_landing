@@ -1,0 +1,130 @@
+.pricing-section {
+  padding: 120px;
+  background: #fafafa;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.section-header h2 {
+  font-size: 48px;
+  color: #0f172a;
+  margin-bottom: 16px;
+}
+
+.section-header p {
+  font-size: 20px;
+  color: #64748b;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+}
+
+.pricing-card {
+  position: relative;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 28px;
+  padding: 40px;
+  box-shadow:
+    0 4px 20px rgba(15, 23, 42, 0.04);
+  transition: 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-8px);
+  box-shadow:
+    0 20px 40px rgba(15, 23, 42, 0.08);
+}
+
+.featured {
+  border: 2px solid #2563eb;
+  transform: scale(1.04);
+}
+
+.badge {
+  position: absolute;
+  top: -14px;
+  right: 30px;
+  background: #2563eb;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.plan-name {
+  color: #2563eb;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.price {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  margin: 28px 0 16px;
+}
+
+.price h3 {
+  font-size: 56px;
+  color: #0f172a;
+  line-height: 1;
+}
+
+.price span {
+  color: #64748b;
+  margin-bottom: 8px;
+}
+
+.plan-desc {
+  color: #64748b;
+  line-height: 1.7;
+  margin-bottom: 32px;
+}
+
+.features-list {
+  list-style: none;
+  margin-bottom: 40px;
+}
+
+.features-list li {
+  padding: 12px 0;
+  color: #334155;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.features-list li::before {
+  content: "✓";
+  color: #2563eb;
+  font-weight: bold;
+  margin-right: 12px;
+}
+
+.pricing-btn {
+  width: 100%;
+  border: none;
+  background: #f1f5f9;
+  color: #0f172a;
+  padding: 16px;
+  border-radius: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.featured .pricing-btn {
+  background: #2563eb;
+  color: white;
+}
+
+.pricing-btn:hover {
+  transform: translateY(-2px);
+}

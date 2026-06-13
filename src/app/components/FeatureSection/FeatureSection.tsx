@@ -1,4 +1,3 @@
-import Section from "../section";
 import '../../../style/FeatureSection/featureSection.css';
 
 type FeatureSectionProps = {
@@ -12,7 +11,7 @@ type FeatureSectionProps = {
 
 const FeatureSection = ({title, titleSpan, para, list, active, image}: FeatureSectionProps)=>{
     return(
-        <Section>
+        <>
             {active?
             <div className="feature-section-container">
                 <div className="feature-section-text">
@@ -45,7 +44,7 @@ const FeatureSection = ({title, titleSpan, para, list, active, image}: FeatureSe
                 </div>
             </div>
             }
-        </Section>
+        </>
     )
 };
 
