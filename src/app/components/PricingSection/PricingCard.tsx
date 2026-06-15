@@ -21,7 +21,7 @@ const PricingCard = ({name, price, per, plan, list, badge}: CardProps)=>{
             <span className="plan-name">{name}</span>
 
       <div className="price">
-        <h3>{price}</h3>
+        <h3>{price}$</h3>
         <span>{per}</span>
       </div>
 

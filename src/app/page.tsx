@@ -3,6 +3,7 @@ import Hero from "./components/hero";
 import KeyFeatures from "./components/keyFeatures/KeyFeatures";
 import FeatureSection from "./components/FeatureSection/FeatureSection";
 import PricingSection from "./components/PricingSection/PricingSection";
+import Footer from "./components/Footer/Footer";
 import { features } from "../data/FeaturesSection";
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
         />
       ))}
       <PricingSection/>
+      <Footer/>
     </div>
   );
 }

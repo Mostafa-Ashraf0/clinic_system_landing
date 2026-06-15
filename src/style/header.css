@@ -5,6 +5,7 @@ header{
     height: 87px;
     position: fixed;
     background-color: white;
+    padding: 0 120px;
     top: 0;
     left: 0;
     box-shadow:
@@ -16,7 +17,6 @@ header{
 header .container{
     height: 100%;
     margin: auto;
-    width: 1250px;
     display: flex;
     align-items: center;
     justify-content: space-between;
