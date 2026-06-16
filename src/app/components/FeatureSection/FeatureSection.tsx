@@ -13,7 +13,7 @@ type FeatureSectionProps = {
 }
 
 const FeatureSection = ({title, titleSpan, para, list, active, image}: FeatureSectionProps)=>{
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+    const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
         const handleResize = () => {
