@@ -21,6 +21,7 @@ header .container{
     align-items: center;
     justify-content: space-between;
     padding: 20px 0;
+    background-color: white;
 }
 
 .container .img{
@@ -35,4 +36,10 @@ header .container{
     align-items: center;
     justify-content: space-between;
     list-style-type: none;
+}
+
+@media (max-width: 1024px) {
+    header{
+        display: none;
+    }
 }

@@ -44,6 +44,8 @@ const Hero = ()=>{
                     <Image
                         src={coverImg}
                         alt=''
+                        width={1000}
+                        height={500}
                     />
                 </div>
             </div>

@@ -1,4 +1,7 @@
+'use client';
 import '../../../style/FeatureSection/featureSection.css';
+import { useState, useEffect } from 'react';
+
 
 type FeatureSectionProps = {
     title: string,
@@ -10,9 +13,20 @@ type FeatureSectionProps = {
 }
 
 const FeatureSection = ({title, titleSpan, para, list, active, image}: FeatureSectionProps)=>{
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+    useEffect(() => {
+        const handleResize = () => {
+        setIsMobile(window.innerWidth < 768);
+        };
+
+        window.addEventListener("resize", handleResize);
+
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
     return(
         <>
-            {active?
+            {active && !isMobile?
             <div className="feature-section-container">
                 <div className="feature-section-text">
                     <h2>{title} <span>{titleSpan}</span></h2>

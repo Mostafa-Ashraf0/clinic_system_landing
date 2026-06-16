@@ -128,3 +128,81 @@
 .pricing-btn:hover {
   transform: translateY(-2px);
 }
+
+@media (max-width: 1024px) {
+  .pricing-section {
+    padding: 80px 60px;
+  }
+
+  .section-header h2 {
+    font-size: 40px;
+  }
+
+  .section-header p {
+    font-size: 18px;
+  }
+
+  .price h3 {
+    font-size: 48px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .pricing-section {
+    padding: 60px 30px;
+  }
+
+  .section-header h2 {
+    font-size: 32px;
+  }
+
+  .section-header p {
+    font-size: 16px;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-card {
+    padding: 32px;
+  }
+
+  .featured {
+    transform: none;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .pricing-section {
+    padding: 40px 15px;
+  }
+
+  .section-header h2 {
+    font-size: 26px;
+  }
+
+  .section-header p {
+    font-size: 14px;
+  }
+
+  .price h3 {
+    font-size: 40px;
+  }
+
+  .pricing-card {
+    padding: 24px;
+  }
+
+  .features-list li {
+    font-size: 14px;
+    padding: 10px 0;
+  }
+
+  .pricing-btn {
+    font-size: 15px;
+    padding: 14px;
+  }
+}

@@ -2,6 +2,31 @@
     display: flex;
     justify-content: center;
     align-items: start;
-    max-width: 1800px;
-    padding: 50px 0;
+    padding: 90px 0 0;
+    width: 100%;
+}
+
+
+/* Large tablets & small laptops */
+@media (max-width: 1024px) {
+    .hero-section {
+        gap: 40px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    .hero-section {
+        gap: 20px;
+    }
 }
