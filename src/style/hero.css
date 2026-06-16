@@ -149,6 +149,7 @@
     }
 
     .container .image {
+        display: none;
         width: 100%;
         height: auto;
         justify-content: center;
