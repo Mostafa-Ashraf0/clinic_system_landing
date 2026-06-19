@@ -21,6 +21,7 @@ export default function Home() {
         list = {feat.features}
         active = {feat.active}
         image = {feat.image}
+        bgColor = {feat.backgroundColor}
         />
       ))}
       <PricingSection/>

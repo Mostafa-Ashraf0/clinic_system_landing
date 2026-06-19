@@ -9,10 +9,11 @@ type FeatureSectionProps = {
     para: string,
     list: string[],
     active: boolean,
-    image: string
+    image: string,
+    bgColor: string
 }
 
-const FeatureSection = ({title, titleSpan, para, list, active, image}: FeatureSectionProps)=>{
+const FeatureSection = ({title, titleSpan, para, list, active, image, bgColor}: FeatureSectionProps)=>{
     const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
@@ -27,7 +28,7 @@ const FeatureSection = ({title, titleSpan, para, list, active, image}: FeatureSe
     return(
         <>
             {active && !isMobile?
-            <div className="feature-section-container">
+            <div className="feature-section-container" style={{backgroundColor:`${bgColor}`}}>
                 <div className="feature-section-text">
                     <h2>{title} <span>{titleSpan}</span></h2>
                     <p>{para}</p>
@@ -42,7 +43,7 @@ const FeatureSection = ({title, titleSpan, para, list, active, image}: FeatureSe
                         <img src={image} alt="img" />
                 </div>
             </div>:
-            <div className="feature-section-container">
+            <div className="feature-section-container" style={{backgroundColor:`${bgColor}`}}>
                 <div className="feature-section-image">
                         <img src={image} alt="img" />
                 </div>

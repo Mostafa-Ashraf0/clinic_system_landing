@@ -1,10 +1,28 @@
+'use client';
 import '../../style/header.css';
 import Button from './Button';
+import HeaderLinks from './header/HeaderLinks';
+import { useState, useEffect } from 'react';
 
 const Header = ()=>{
+      const [scrolled, setScrolled] = useState(false);
+      useEffect(() => {
+        const handleScroll = () => {
+        setScrolled(window.scrollY > 50);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        // Cleanup
+        return () => {
+        window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
     return(
-        <header>
-            <div className="container">
+        <header className={scrolled?'header-scroll':'header'}>
+            <HeaderLinks/>
+            <div className="header-container">
                 <div className='img'>
                     <img src="/next.svg" alt="" />
                 </div>

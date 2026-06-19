@@ -15,7 +15,8 @@ export const features = [
       "Improve receptionist productivity."
     ],
     active: true,
-    image: '/calendar-svgrepo-com 222.svg'
+    image: '/calendar-svgrepo-com 222.svg',
+    backgroundColor: '#F8FAFC'
   },
   {
     title: "Electronic Medical Records",
@@ -32,7 +33,8 @@ export const features = [
       "Secure storage of sensitive medical information with role-based access."
     ],
     active: false,
-    image: '/profile-svgrepo-com.svg'
+    image: '/profile-svgrepo-com.svg',
+    backgroundColor: ''
   },
   {
     title: "Analytical",
@@ -51,6 +53,7 @@ export const features = [
       "Improve clinic efficiency through data-driven insights."
     ],
     active: true,
-    image: '/analytics-laptop-svgrepo-com.svg'
+    image: '/analytics-laptop-svgrepo-com.svg',
+    backgroundColor: '#F8FAFC'
   }
 ];

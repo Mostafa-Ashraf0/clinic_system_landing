@@ -2,8 +2,7 @@
     display: flex;
     align-items: center;
     margin: 0 auto;
-    height: 100vh;
-    padding-left: 50px;
+    padding: 100px 50px;
     background-color: #F8FAFC;
     width: 100%;
 }
@@ -128,7 +127,6 @@
         flex-direction: column;
         justify-content: center;
         height: auto;
-        min-height: 100vh;
         padding: 60px 20px;
         text-align: center;
         gap: 40px;

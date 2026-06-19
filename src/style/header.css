@@ -1,45 +1,125 @@
-header{
+.header,
+.header-scroll{
     width: 100%;
     font-size: 18px;
     font-weight: 400;
-    height: 87px;
     position: fixed;
-    background-color: white;
-    padding: 0 120px;
     top: 0;
     left: 0;
     box-shadow:
     0 1px 2px rgba(15, 23, 42, 0.04),
     0 8px 24px rgba(15, 23, 42, 0.04);
     z-index: 1000;
+    transition: all .3s ease;
 }
 
-header .container{
+.header{
+    background-color: white;
+}
+
+.header-scroll{
+    background-color: white;
+    background-image: url('https://dentolize.com/wp-content/uploads/2025/07/Group2-min.png?id=11971');
+    color: white;
+}
+
+header .header-container{
     height: 100%;
+    height: 87px;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0;
-    background-color: white;
+    padding: 20px 120px;
 }
 
-.container .img{
+.header-container .img{
     height: 100%;
     width: 200px;
 }
 
-.container ul{
+.header-container ul{
     height: 100%;
     width: 500px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     list-style-type: none;
+    
 }
+
+.header-links-container{
+    width: 100%;
+    padding: 0 120px;
+     border: solid 1px rgba(17, 136, 221, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-links-container ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    border: solid 1px rgba(17, 136, 221, 0.15);
+    border-top: none;
+    border-bottom: none;
+}
+
+.header-links-container ul li{
+    display: flex;
+    align-items: center;
+}
+
+/* separator */
+.header-links-container ul li + li::before,
+.header-links-contact a::after{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 40px;
+    background-color: rgba(17, 136, 221, 0.15);
+}
+
+.header-links-contact a::after{
+    margin-left: 12px;
+}
+
+/* link */
+.header-links-container ul li a,
+.header-links-contact a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 0 12px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.header-links-contact a{
+    gap: 10px;
+}
+
+.header-links-contact a span{
+    font-size: 16px;
+}
+
+.header-links-contact{
+    display: flex;
+}
+
+
 
 @media (max-width: 1024px) {
     header{
+        position: static;
+    }
+
+    header .header-container ul{
         display: none;
     }
+
 }
