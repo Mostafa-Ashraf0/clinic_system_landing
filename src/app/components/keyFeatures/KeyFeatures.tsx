@@ -50,7 +50,6 @@ const KeyFeatures = ()=>{
   ];
 
     return(
-       <Section>
         <div className='features-container'>
             <div className='text-box'>
                 <h2>Everything you need to run <br/> your clinic, <span>effortlessly</span></h2>
@@ -68,7 +67,6 @@ const KeyFeatures = ()=>{
                 ))}
             </div>
           </div>
-       </Section>
     )
 };
 

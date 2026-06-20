@@ -3,6 +3,7 @@ import '../../style/header.css';
 import Button from './Button';
 import HeaderLinks from './header/HeaderLinks';
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 const Header = ()=>{
       const [scrolled, setScrolled] = useState(false);
@@ -24,7 +25,11 @@ const Header = ()=>{
             <HeaderLinks/>
             <div className="header-container">
                 <div className='img'>
-                    <img src="/next.svg" alt="" />
+                    <Image 
+                    width={200}
+                    height={60}
+                    src="/Alliance_Healthcare_logo.svg" 
+                    alt="" />
                 </div>
                 <ul>
                     <li>Home</li>

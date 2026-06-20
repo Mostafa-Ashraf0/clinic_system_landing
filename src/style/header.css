@@ -30,13 +30,10 @@ header .header-container{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 120px;
+    padding: 0 120px;
 }
 
-.header-container .img{
-    height: 100%;
-    width: 200px;
-}
+
 
 .header-container ul{
     height: 100%;
@@ -118,8 +115,31 @@ header .header-container{
         position: static;
     }
 
+    header .header-container,
+    .header-links-container{
+        padding: 0 40px;
+    }
+
     header .header-container ul{
         display: none;
     }
 
+}
+
+@media (max-width: 768px) {
+    .header-links-contact a span{
+        display: none;
+    }
+    .header-container .img img{
+        width: 150px;
+    }
+}
+
+
+
+
+@media (max-width: 480px) {
+  .header-container .img img{
+    width: 120px;
+  }
 }

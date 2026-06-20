@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: start;
-    padding: 90px 0 0;
+    padding-top: calc(87px + 40px); /*header links heigth + header heigth*/
     width: 100%;
 }
 

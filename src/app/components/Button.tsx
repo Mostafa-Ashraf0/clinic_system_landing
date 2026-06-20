@@ -6,7 +6,7 @@ type BtnProbs = {
     backgroundColor: string,
     backgroundImage:string,
     color: string,
-    text: string
+    text: string,
 }
 
 const Button = ({link, backgroundColor,backgroundImage, color, text}: BtnProbs)=>{
