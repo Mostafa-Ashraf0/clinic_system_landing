@@ -1,5 +1,4 @@
 'use client';
-import Section from '../section';
 import FeatureCard from './FeaturesCard';
 import '../../../style/keyFeatures/keyFeatures.css';
 
